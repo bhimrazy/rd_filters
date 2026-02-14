@@ -52,7 +52,7 @@ test_inpharmatica = [
 ]
 
 def test_hydrogen_suppression():
-    alert_file_name = str(resources.files("rd_filters") / "data" / "alert_collection.csv")                                                    "data/alert_collection.csv")
+    alert_file_name = str(resources.files("rd_filters") / "data" / "alert_collection.csv")
     for rule_list, tests in [(["Inpharmatica"], test_inpharmatica),
                              (["LINT"], test_lint)]:
         rf = rd_filters.RDFilters(alert_file_name)
