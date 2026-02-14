@@ -2,7 +2,7 @@ name: CI testing
 
 on:
   push:
-    branches: [master, main]
+    branches: [master, main, fix-pkg-resources]
   pull_request:
     branches: [master, main]
 
