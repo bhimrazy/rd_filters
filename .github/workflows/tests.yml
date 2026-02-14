@@ -2,7 +2,7 @@ name: CI testing
 
 on:
   push:
-    branches: [master, main]
+    branches: [master, main, fix-pkg-resources]
   pull_request:
     branches: [master, main]
 
@@ -27,7 +27,6 @@ jobs:
         with:
           activate-environment: true
           python-version: ${{ matrix.python-version }}
-          enable-cache: true
 
       - name: Install dependencies
         run: |
